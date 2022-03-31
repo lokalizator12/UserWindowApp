@@ -42,13 +42,25 @@ namespace UserWindowApp
         {
             if (textBox1.Text == "anatoli" && textBox2.Text == "fatsik")
             {
-                Form form2 = new Form2();
-                form2.ShowDialog();
+                button3.Visible = true;
+                button4.Visible = true;
             }
             else
             {
                 MessageBox.Show("Login or password is incorrectly");
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form formatkaA = new Formatka2();
+            formatkaA.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form formatkaB = new Formatka3();
+            formatkaB.ShowDialog();
         }
     }
 }
